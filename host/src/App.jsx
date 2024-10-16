@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App1 from "remote1/App1";
 import App2 from "remote2/App2";
+import Home from "./Home";
 
 const App = () => {
 	return (
@@ -14,7 +15,7 @@ const App = () => {
 					path="/"
 					element={
 						<Suspense fallback={"Loading"}>
-							<h2>Container Home</h2>
+							<Home />
 						</Suspense>
 					}
 				/>

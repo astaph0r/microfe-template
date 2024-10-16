@@ -1,9 +1,34 @@
-import React from 'react'
+import React from "react";
+
+import { Link } from 'react-router-dom';
 
 const R1R1 = () => {
-  return (
-    <div>Remote 1 Route 1</div>
-  )
-}
+	return (
+		<>
+     <div>Remote 1 Route 1</div>
+			<div style={{ display: 'flex', gap: '10px' }}>
+        {/* Button 1 */}
+        <Link to="/app1/route1">
+          <button style={{ padding: '10px 20px' }}>Go to App1-Route1</button>
+        </Link>
+        
+        {/* Button 2 */}
+        <Link to="/app1/route2">
+          <button style={{ padding: '10px 20px' }}>Go to App1-Route2</button>
+        </Link>
 
-export default R1R1
+        {/* Button 3 */}
+        <Link to="/app2/route1">
+          <button style={{ padding: '10px 20px' }}>Go to App2-Route1</button>
+        </Link>
+
+        {/* Button 4 */}
+        <Link to="/app2/route2">
+          <button style={{ padding: '10px 20px' }}>Go to App2-Route2</button>
+        </Link>
+      </div>
+		</>
+	);
+};
+
+export default R1R1;
